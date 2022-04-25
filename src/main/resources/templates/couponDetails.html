@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title> This is a sample page</title></head>
+<body>
+
+<h1>Get Coupon Details</h1>
+
+<a href="/showcreatecoupon"> Create Coupon </a>
+<a href="/getcoupon"> Get Coupen </a>
+<a href="/logout"> Logout </a>
+<H2>Coupon details </H2>
+
+Code : <b th:text="${coupon.code}" /> <br/>
+Discount: <b th:text="${coupon.discount}" /><br/>
+Expirary Date :  <b th:text="${coupon.expDate}" /><br/>
+
+
+</body>
+</html>
